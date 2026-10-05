@@ -22,7 +22,7 @@ const STEPS = [
   { key: "carb", label: "Carb", emoji: "🍚", color: "#7A5C2E",
     items: ["Rice","Noodles","Bread","Potatoes","Grains","Legumes"] },
   { key: "style", label: "Cuisine", emoji: "🌏", color: "#4A5A7A",
-    items: ["East Asian","Southeast Asian","South Asian","Italian & Mediterranean","French & Continental","Latin American","Middle Eastern","American"] },
+    items: ["Asian","Italian & Mediterranean","French & Continental","Latin American","Middle Eastern","American"] },
 ];
 
 const DIFF = [

@@ -42,9 +42,7 @@ const DEFS = {
   /* "cooking" rather than "flavors" on purpose — "South Asian flavors" was read
      as licence to season a shepherd's pie with curry powder and call it done. */
   style: {
-    "East Asian": "Japanese, Chinese, or Korean cooking",
-    "Southeast Asian": "Thai, Vietnamese, or Filipino cooking",
-    "South Asian": "Indian, Sri Lankan, or Pakistani cooking",
+    "Asian": "Japanese, Chinese, Korean, Thai, Vietnamese, Filipino, Indian, Sri Lankan, or Pakistani cooking",
     "Italian & Mediterranean": "Italian, Greek, or Spanish cooking",
     "French & Continental": "French, Belgian, or Swiss cooking",
     "Latin American": "Mexican, Peruvian, or Brazilian cooking",
