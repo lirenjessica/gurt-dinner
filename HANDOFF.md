@@ -94,14 +94,13 @@ setting, or every deploy silently becomes a preview again.
 ## Branches
 
 - `main` — the live one. Vercel publishes whatever lands here.
-- `old` — a stale bookmark at `12814d2`, formerly called `master`. Nothing
-  depends on it.
 - Anything else is work in progress. Name it after the thing it does
   (`grocery-list-button`, `fix-bom-in-env`), branch it off `main`, merge it back
   when it works, then delete it. The commits live on in `main`; the branch was
   only a label.
 
-Renamed from `newbranch` and `master` on 19 Sep 2026.
+Renamed from `newbranch` on 19 Sep 2026. `master` was renamed to `old` the same
+day and both were deleted; neither held anything `main` does not.
 
 ## Gotchas that cost real time
 
@@ -112,11 +111,11 @@ Renamed from `newbranch` and `master` on 19 Sep 2026.
   Check with `file .env` — it should say ASCII, not "with BOM".
 - **Gemini free tier: 20 requests/minute** on `gemini-2.5-flash-lite`. Rapid
   testing exhausts it and the app shows a generic error. Space out test calls.
-- **`old` holds nothing unique.** Earlier notes here claimed `master` (now
-  `old`) had a history unrelated to the working branch and could not be merged.
-  That was wrong. Its only commit, `12814d2`, is the base of `main`'s history,
-  so `old` is just a stale bookmark sitting three commits back. It is kept
-  because deleting it gains nothing, not because it holds anything. Work happens
+- **The old `master` held nothing unique.** Earlier notes here claimed it had a
+  history unrelated to the working branch and could not be merged. That was
+  wrong: its only commit, `12814d2`, is the base of `main`'s history, so it was
+  a stale bookmark and was deleted on 19 Sep 2026 along with `old`, the name it
+  briefly carried. Recorded in case the claim resurfaces somewhere. Work happens
   on `main`, which is GitHub's default branch and Vercel's production branch.
 - **CLI deploys mislabel the commit.** `vercel --prod` uploads the local folder,
   not the repo, but tags the deployment with whatever commit you happen to be
@@ -153,8 +152,8 @@ Decisions made deliberately — check before reverting:
   Both are visible in the browser bundle by design. Fine for a personal list;
   would need Supabase Auth to lock down.
 - No allergy / dietary restriction handling anywhere (user declined it).
-- Delete the `old` branch if you ever want the branch list tidy. Nothing depends
-  on it and it duplicates commits already in `main`.
+- Delete merged work branches once they land in `main`. The commits survive the
+  branch; the branch was only a label.
 
 ## Communication preference
 
