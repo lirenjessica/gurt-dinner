@@ -155,9 +155,12 @@ so local and production behave identically.
 
 ## A note on the name
 
-This project was called dinner-spinner until Sep 2026. The repo, folder,
-Vercel project and Supabase project are now gurt-dinner, gurt-dinner,
-gurt-dinner and gurt-apps.
+This project was called dinner-spinner until Sep 2026. The folder and the
+Vercel project are now gurt-dinner, and the Supabase project is gurt-apps.
+
+The GitHub repo was NOT renamed. It is still
+https://github.com/lirenjessica/dinner-spinner, which is what `git remote -v`
+reports and what every push goes to.
 
 Four strings still say `dinner-spinner` on purpose, in `src/pantry.js`,
 `src/favorites.js`, `src/feedback.js` and `src/App.jsx`:

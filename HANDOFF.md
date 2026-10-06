@@ -9,11 +9,13 @@ React + Vite app. Spin four wheels (protein / veggie / carb / cuisine) → Gemin
 generates 2 dinner recipes → shopping list → cooking steps → rate it at the end.
 
 - **Live:** https://gurtdinner.vercel.app
-- **Local folder:** `C:\Users\LirenTruong\gurt-dinner`
-- **GitHub:** https://github.com/lirenjessica/gurt-dinner (public)
+- **Local folder:** `C:\Users\LirenTruong\Projects\gurt-dinner`
+- **GitHub:** https://github.com/lirenjessica/dinner-spinner (public).
+  The repo kept its original name through the Sep 2026 rename; only the folder
+  and the Vercel project changed.
 - **Vercel project:** `gurt-dinner` (owner `lirenjessica`, team `dinner-s-projects`).
-  Renamed from `gurt-dinner-olfx` on 19 Sep 2026, so preview URLs from before
-  that date no longer resolve.
+  Renamed from `dinner-spinner-olfx` on 19 Sep 2026, so preview URLs from
+  before that date no longer resolve.
 - **Supabase project ref:** `kjiapkmuwfnnooayvbwd`
 
 ## Architecture — read this before changing the AI call
